@@ -1,7 +1,15 @@
 {% extends 'layouts/topHtml.html' %}
+{% load static %}
 
 {% block title %}Home Page{% endblock %}
 
-{% block content%}
+{% block content %}
     <h1>Home Page</h1>
+    <div id="get-rates-app"></div>
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static '/js/main.js' %}" type="text/babel"></script>
 {% endblock %}

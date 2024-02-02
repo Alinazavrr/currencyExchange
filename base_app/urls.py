@@ -1,5 +1,8 @@
 from django.urls import path
 
+from . import views
+
+
 urlpatterns = [
-    #create urls for 2 templates, first template will be home and second user
+    path('', views.homePage.as_view(), name='home'),
 ]
