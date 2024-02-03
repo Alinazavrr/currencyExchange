@@ -9,7 +9,7 @@ function App() {
 
   const getRates = () => {
     // Формирование URL с параметром
-    const url = `https://localhost:8000/api/currency-rates/?name=${selectedCurrency}`;
+    const url = `http://localhost:8000/api/currency-rates/?name=${selectedCurrency}`;
 
     // Выполнение GET-запроса
     fetch(url)

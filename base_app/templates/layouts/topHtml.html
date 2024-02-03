@@ -7,6 +7,10 @@
     {% bootstrap_css %}
     {% bootstrap_javascript jquery='slim' %}
 
+    {% block stylesheets %}
+
+    {% endblock %}
+
 
     <!-- React core library (development version) -->
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
@@ -16,9 +20,6 @@
 
     <!-- Babel standalone for JSX transformation (development version) -->
     <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
-
-    <!-- Optional: Add support for async/await and other ECMAScript features (development version) -->
-    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-preset-env/1.7.0/preset-env.js"></script>
 
 
 </head>

@@ -1,0 +1,19 @@
+{% extends 'layouts/topHtml.html' %}
+{% load static %}
+
+{% block title %}Register Page{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static '/css/reg.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="registrationApp"></div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static '/js/reg.js' %}" type="text/babel"></script>
+{% endblock %}

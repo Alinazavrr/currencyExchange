@@ -13,8 +13,8 @@ def takeCurrency(currency):
     base_currency = data['base_code']
 
     # example: "time_next_update_utc": "Fri, 02 Feb 2024 00:00:01 +0000",
-    time_last_update = datetime.strptime(data['time_last_update_utc'], "%a, %d %b %Y %H:%M:%S %z")
-    time_next_update = datetime.strptime(data['time_next_update_utc'], "%a, %d %b %Y %H:%M:%S %z")
+    time_last_update = datetime.datetime.strptime(data['time_last_update_utc'], "%a, %d %b %Y %H:%M:%S %z")
+    time_next_update = datetime.datetime.strptime(data['time_next_update_utc'], "%a, %d %b %Y %H:%M:%S %z")
 
     rates = data['conversion_rates']
 
